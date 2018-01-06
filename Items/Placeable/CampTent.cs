@@ -10,9 +10,12 @@ namespace WeaponOut.Items.Placeable
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Camping Tent");
+			DisplayName.AddTranslation(GameCulture.Russian, "Палатка");
             Tooltip.SetDefault(
                 "Acts as a temporary spawn point\n" +
                 "Unreliable in multiplayer");
+				Tooltip.AddTranslation(GameCulture.Russian, "Действует как временная точка спавна\n" +
+				"Ненадёжна в мультиплеере");
         }
         public override void SetDefaults()
         {
